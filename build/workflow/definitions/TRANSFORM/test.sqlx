@@ -1,0 +1,20 @@
+config {
+  type: "table",
+  schema: dataform.projectConfig.vars.TARGET_DATA,
+  description: "Test Script to Validate Dataform Execution",
+  columns: {
+    id: "Unique identifier",
+    description: "Description.",
+    execution_time: "Execution time."
+  },
+  assertions: {
+    uniqueKey: ["id"]
+  },
+  tags: ["TRANSFORM_DATA"]
+}
+
+
+SELECT
+    1 AS id
+  , "TEST SCRIPT" AS description
+  , CURRENT_TIMESTAMP AS execution_time

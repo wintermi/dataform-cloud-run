@@ -1,0 +1,14 @@
+# The .gcloudignore file excludes file from upload to Cloud Build.
+# If this file is deleted, gcloud will default to .gitignore.
+
+.git/
+.gitignore
+LICENSE
+README.md
+
+build.sh
+deploy.sh
+destroy.sh
+execute.sh
+
+node_modules/
